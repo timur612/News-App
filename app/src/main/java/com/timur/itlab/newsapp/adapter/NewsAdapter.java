@@ -31,6 +31,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
     public NewsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.news_item, parent,false);
+        View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.diolog_content,parent,false);
         NewsHolder newsHolder = new NewsHolder(view);
 
         return newsHolder;
@@ -48,7 +49,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
 
         holder.date.setText(date);
         holder.author.setText(author);
-      //  holder.content.setText(content);
+        //holder.content.setText(content);
         Picasso.get().load(image).fit().centerInside().into(holder.image);
     }
 

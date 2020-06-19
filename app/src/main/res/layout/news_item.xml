@@ -4,9 +4,9 @@
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:padding="10dp"
     app:cardCornerRadius="18dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginRight="25dp"
-    android:layout_marginLeft="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
     android:layout_marginBottom="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,9 +18,9 @@
 
         <ImageView
             android:id="@+id/news_card_img"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -32,8 +32,9 @@
             android:id="@+id/author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="Автор"
-            android:textColor="@color/colorText"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -48,28 +49,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Дата"
-            android:textColor="@color/colorText"
+            android:textColor="#FFFFFF"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/news_card_img"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.923" />
+            app:layout_constraintVertical_bias="0.911" />
 
-        <TextView
-            android:id="@+id/news_card_content"
-            android:textColor="@color/colorText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Контент"
-            android:textSize="25sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.52"
-            app:layout_constraintStart_toEndOf="@+id/news_card_img"
-            app:layout_constraintTop_toTopOf="parent" />
+        <!--        <TextView-->
+<!--            android:id="@+id/news_card_content"-->
+<!--            android:textColor="@color/colorText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Контент"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="italic"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.52"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/news_card_img"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

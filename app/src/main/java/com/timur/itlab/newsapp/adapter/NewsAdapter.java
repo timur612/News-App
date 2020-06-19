@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.timur.itlab.newsapp.R;
 import com.timur.itlab.newsapp.items.News;
 
@@ -47,8 +48,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
 
         holder.date.setText(date);
         holder.author.setText(author);
-        holder.content.setText(content);
-
+      //  holder.content.setText(content);
+        Picasso.get().load(image).fit().centerInside().into(holder.image);
     }
 
     @Override
@@ -68,7 +69,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
 
             image = itemView.findViewById(R.id.news_card_img);
             author = itemView.findViewById(R.id.author);
-            content = itemView.findViewById(R.id.news_card_content);
+            //content = itemView.findViewById(R.id.news_card_content);
             date = itemView.findViewById(R.id.date);
 
 
